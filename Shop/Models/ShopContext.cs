@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Shop.Models
 {
-    public class ShopContext
+    public class ShopContext : DbContext
     {
         public virtual DbSet<Partners> Partners { get; set; }
         public virtual DbSet<Categories> Categories { get; set; }
