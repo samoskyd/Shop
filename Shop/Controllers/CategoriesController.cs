@@ -77,10 +77,12 @@ namespace Shop.Controllers
         [HttpPost]
         public async Task<ActionResult<Categories>> PostCategories(Categories categories)
         {
+            if (categories == null) return BadRequest();
+
             _context.Categories.Add(categories);
             await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetCategories", new { id = categories.CategoriesId }, categories);
+            return Ok(categories);
+            //return CreatedAtAction("GetCategories", new { id = categories.CategoriesId }, categories);
         }
 
         // DELETE: api/Categories/5
