@@ -6,9 +6,6 @@ This project was created for the purpose of practice and serves as a Web API dev
 
 - [Features](#features)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
